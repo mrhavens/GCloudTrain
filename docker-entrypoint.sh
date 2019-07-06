@@ -15,4 +15,5 @@ if [ ! -f "/app/workers/reports/config/production.toml" ] ; then
         cp /app/config/docker-production.toml.tmpl /app/workers/reports/config/production.toml
     fi
 fi
+export PORT="3000"
 exec "$@"
