@@ -1,3 +1,5 @@
+exports.GCloudTrain = (req, res) => {
+
 'use strict';
 
 /**
@@ -153,3 +155,5 @@ server.on('listening', () => {
         startNextServices();
     }
 });
+
+};
