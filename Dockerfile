@@ -8,6 +8,6 @@ RUN npm install --no-progress --production && npm install --no-progress passport
 # Later, copy the app files. That improves development speed as buiding the Docker image will not have 
 # to download and install all the NPM dependencies every time there's a change in the source code
 COPY . /app
-EXPOSE 80
+EXPOSE 8080
 ENTRYPOINT ["bash", "/app/docker-entrypoint.sh"]
 CMD ["node", "index.js"]
